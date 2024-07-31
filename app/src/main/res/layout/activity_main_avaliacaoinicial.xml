@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#277ABE"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_avaliacaoinicial">
+
+    <TextView
+        android:id="@+id/texto_abertura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/em_situa_es_de_risco_n_o_hesite_em_chamar_imediatamente_os_servi_os_de_emerg_ncia_n_nestamos_aqui_para_fornecer_orienta_es_at_a_chegada_da_ajuda_profissional"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/texto_abertura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:onClick="tela_ps"
+        android:src="@drawable/logo_titulo" />
+
+    <ImageView
+        android:id="@+id/seta"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:onClick="tela_ps"
+        android:src="@drawable/seta" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:onClick="tela_ps"
+        android:text="Pular"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

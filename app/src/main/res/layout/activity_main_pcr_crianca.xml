@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_pcr_crianca">
+
+    <ImageView
+        android:id="@+id/barra_topo_lei"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageView
+        android:id="@+id/titulo_procedimento_pcr"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginTop="-4dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_lei"
+        app:srcCompat="@drawable/titulo_crianca" />
+
+    <ScrollView
+        android:id="@+id/pcr_crianca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="157dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_procedimento_pcr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/oqueeavulsao_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ligue imediatamente para a emergência e inicie o procedimento até que a ajuda chegue."
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:id="@+id/passo1_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/passo1" />
+
+            <TextView
+                android:id="@+id/passo1_pcr_criancal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apoie a palma de uma das mãos sobre o peito da vítima levantando os dedos, específicamente entre os mamilos (esterno).\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/passo1_pcr_criancaf"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/img1_pcr_crianca" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo2_pcr_crianca"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/passo2" />
+
+            <TextView
+                android:id="@+id/passo2_pcr_criancal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Empurre a mão com força contra o peito, utilizando o peso do próprio corpo no ritmo de 2 empurrões por segundo.\n\nA profundidade da massagem deve ser de 4 a 5 centímetros, esperando o retorno do tórax.\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/passo2_pcr_criancaf"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/img2_pcr_crianca" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/comoagir_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/passo3" />
+
+            <TextView
+                android:id="@+id/passo3_pcr_criancal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caso se sinta confortável, realize 2 respirações boca a boca a cada 15 compressões com os dedos.\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/passo3_pcr_criancaf"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/img3_pcr_crianca" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/passo4" />
+
+            <TextView
+                android:id="@+id/passo4_pcr_criancal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Se possível troque de socorrista a cada 2 minutos.\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/passo4_pcr_criancaf"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/img4_pcr_crianca" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/botao_voltar_avaliacaoinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_ps"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

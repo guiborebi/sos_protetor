@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_primeiros_socorros">
+
+    <ScrollView
+        android:id="@+id/primeiros_socorros"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="60dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/botao_primeiros_socorros_primeiros_socorros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botoes_emergencia">
+
+        <LinearLayout
+            android:id="@+id/rolagem_ps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linha_01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linha01_colunas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/botao_pcr"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="tela_pcr"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/botao_pcr" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="150dp" />
+
+                    <ImageButton
+                        android:id="@+id/botao_ferimentos"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="tela_ferimentos"
+                        android:scaleType="fitEnd"
+                        app:srcCompat="@drawable/botao_ferimentos" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linha_02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/linha02_colunas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/botao_fratura"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="tela_fratura"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/botao_fratura" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="150dp" />
+
+                    <ImageButton
+                        android:id="@+id/botao_desmaio"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="tela_desmaio"
+                        android:scaleType="fitEnd"
+                        app:srcCompat="@drawable/botao_desmaio" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linha_03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/linha03_colunas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/botao_convulsao"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="tela_convulsao"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/botao_convulsao" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="150dp" />
+
+                    <ImageButton
+                        android:id="@+id/botao_ovace"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="tela_ovace"
+                        android:scaleType="fitEnd"
+                        app:srcCompat="@drawable/botao_ovace" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linha_04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/linha04_colunas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/botao_avulsaodentaria"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="tela_avulsaodentaria"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/botao_avulsaodental" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/botoes_emergencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_primeiros_socorros">
+
+        <ImageButton
+            android:id="@+id/botao_bombeiros"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/botao_bombeiros" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="90dp" />
+
+        <ImageButton
+            android:id="@+id/botao_samu"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/botao_samu" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="90dp" />
+
+        <ImageButton
+            android:id="@+id/botao_policia"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/botao_policia" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/barra_topo_primeiros_socorros"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageButton
+        android:id="@+id/botao_lei_primeiros_socorros"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_lei"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botao_lei" />
+
+    <ImageButton
+        android:id="@+id/botao_sobre_primeiros_socorros"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_sobre"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_sobre_fora" />
+
+    <ImageButton
+        android:id="@+id/botao_creditos_primeiros_socorros"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_creditos"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/botao_creditos_fora" />
+
+    <ImageButton
+        android:id="@+id/botao_primeiros_socorros_primeiros_socorros"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_primeiros_socorros" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

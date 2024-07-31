@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_ovace">
+
+    <ImageView
+        android:id="@+id/barra_topo_lei"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageView
+        android:id="@+id/titulo_ovace"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="-4dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_lei"
+        app:srcCompat="@drawable/titulo_ovace" />
+
+    <ScrollView
+        android:id="@+id/scrollview_ovace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_ovace">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <ImageView
+                android:id="@+id/oqueepcr_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/oquee" />
+
+            <TextView
+                android:id="@+id/oqueeavulsao_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ovace é uma emergência médica que ocorre quando um objeto estranho fica preso nas vias respiratórias, impedindo o fluxo de ar para os pulmões. Isso pode levar a uma falta de oxigênio e até mesmo à morte se não for tratado rapidamente."
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:id="@+id/passo1_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/comoidentificar" />
+
+            <ImageView
+                android:id="@+id/horadeouro_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/sinais_ovace" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:id="@+id/procedimentos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/procedimentos" />
+
+            <TextView
+                android:id="@+id/procedimento_pcr_legenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecione abaixo a idade da vítma:"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/procedimentos_pcr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/botao_pcr_bebe"
+                    android:layout_width="130dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="tela_ovace_bebe"
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/botao_bebe_ovace" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/botao_pcr_crianca"
+                    android:layout_width="130dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="tela_ovace_criadult"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/botao_criadult_ovace" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/botao_voltar_avaliacaoinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_ps"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="60dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/botao_primeiros_socorros_sobre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_sobre">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/txt_ouviufalar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOCÊ JÁ OUVIU FALAR DA LEI LUCAS?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_ouviufalar_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A Lei Lucas foi criada em prol da segurança de crianças em espaços coletivos. Com o número 13,722/2018, a lei foi sancionada no dia 04/10/2018 e obriga as escolas públicas e privadas e espaços de recreação infantil a se prepararem para atendimento de primeiros socorros.\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#5A5A5A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_origem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ORIGEM DA LEI LUCAS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_origem_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Durante um passeio escolar em setembro de 2017, Lucas Bigarelli, um menino de apenas 10 anos, acabou se engasgando com um pedaço de salsicha que estava comendo. O problema é que nenhum de seus professores na época tinha técnicas de primeiros socorros para socorrê-lo. Até a chegada do socorro, Lucas teve várias paradas cardiorrespiratórias e infelizmente não sobreviveu.\n\nDesde então a mãe de Lucas, Alessandra Bigarelli, uniu forças para que a lei fosse criada em prol de salvar outras crianças por asfixia mecânica, de modo que todos os profissionais fossem aptos a socorrer uma criança durante um acidente no período escolar.\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#5A5A5A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_determina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O QUE A LEI DETERMINA?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_determina_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Portanto, a Lei Lucas determina pontos importantes. Voltada para funcionários e profissionais de espaços de infância e escolas a mesma exige que:\n\n- Exista treinamento dos profissionais sobre técnicas de primeiros socorros e o mesmo aconteça a cada dois anos;\n\n- A lei serve para escolas públicas ou privadas, assim como qualquer área especializada em atendimento infantil como buffes, por exemplo;\n\n- Todos os estabelecimentos precisam contar com kit de primeiros socorros em sua instalação;\n\n- Os locais precisam fixar em um local visível a certificação que comprove a realização da capacitação dos profissionais;\n\n- O não cumprimento da determinação poderá acarretar multa e até mesmo cassação do alvará escolar caso o não cumprimento seja recorrente.\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#5A5A5A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_importancia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QUAL A IMPORTÂNCIA DA LEI PARA AS ESCOLAS?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_importancia_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para se ter uma ideia, somente em 2017, ano em que Lucas faleceu, 964 crianças morreram afogadas.  Esse dado vem da Sociedade Brasileira de Atendimento Integrado ao Traumatizado (SBAIT).\n\nDessa forma agir diante de uma emergência como o afogamento é essencial para salvar vidas. Portanto, a lei vem justamente para colocar esses ensinamentos em prática, de modo a contribuir de forma efetiva na segurança do ambiente escolar.\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#5A5A5A"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/barra_topo_sobre"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageButton
+        android:id="@+id/botao_lei_sobre"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_lei"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botao_lei" />
+
+    <ImageButton
+        android:id="@+id/botao_sobre_sobre"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_sobre_dentro" />
+
+    <ImageButton
+        android:id="@+id/botao_creditos_sobre"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_creditos"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/botao_creditos_fora" />
+
+    <ImageButton
+        android:id="@+id/botao_primeiros_socorros_sobre"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_ps"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_primeiros_socorros" />
+</androidx.constraintlayout.widget.ConstraintLayout>

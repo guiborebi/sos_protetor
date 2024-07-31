@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_ferimentos">
+
+    <ImageView
+        android:id="@+id/barra_topo_lei"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageView
+        android:id="@+id/titulo_ferimentos"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="-4dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_lei"
+        app:srcCompat="@drawable/titulo_ferimentos" />
+
+    <ScrollView
+        android:id="@+id/scrollview_ferimentos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_ferimentos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <ImageView
+                android:id="@+id/oqueepcr_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/oquee" />
+
+            <TextView
+                android:id="@+id/oqueeavulsao_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ferimento é uma lesão física ou dano ao corpo, geralmente causado por um corte, contusão, laceração, queimadura, perfuração ou outra forma de traumatismo. Ferimentos podem variar em gravidade, desde pequenas escoriações e arranhões até ferimentos graves que requerem tratamento médico imediato. O tratamento adequado de um ferimento depende do tipo e gravidade da lesão."
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo1_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/orientacoes_gerais" />
+
+            <ImageView
+                android:id="@+id/horadeouro_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="280dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/orientacoes_gerais_ferimentos" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:id="@+id/passo2_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/esq_1ferimentos_leves" />
+
+            <ImageView
+                android:id="@+id/comoidentificar_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="210dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/ferimentos_leves_conteudo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/comoagir_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/dir_2ferimento_profundo" />
+
+            <ImageView
+                android:id="@+id/comoagir_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                app:srcCompat="@drawable/ferimentos_profundo_conteudo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/esq_2contusao" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                app:srcCompat="@drawable/contusao_conteudo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/hemorragia_interna"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/dir_4hemorragia_interna" />
+
+            <ImageView
+                android:id="@+id/hemorragia_interna_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:srcCompat="@drawable/hemorragia_interna_conteudo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:id="@+id/hemorragia_externa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/esq_2hemorragia_externa" />
+
+            <ImageView
+                android:id="@+id/hemorragia_externa_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:srcCompat="@drawable/hemorragia_externa_conteudo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/botao_voltar_avaliacaoinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_ps"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

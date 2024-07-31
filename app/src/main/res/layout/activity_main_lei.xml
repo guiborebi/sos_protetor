@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_lei">
+
+    <ScrollView
+        android:id="@+id/scrollview_lei"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="60dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/botao_primeiros_socorros_lei"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_lei">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_brasao"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/brasao" />
+
+                <TextView
+                    android:id="@+id/txt_cabecalho"
+                    android:layout_width="273dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Presidência da República\nSecretaria-Geral\nSubchefia para Assuntos Jurídicos"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#827717" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_numerolei"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\n\nLEI Nº 13.722, DE 4 DE OUTUBRO DE 2018.\n"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#00085E" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_espaco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="                    " />
+
+                <TextView
+                    android:id="@+id/txt_ementa"
+                    android:layout_width="251dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\nTorna obrigatória a capacitação em noções básicas de primeiros socorros de professores e funcionários de estabelecimentos de ensino públicos e privados de educação básica e de estabelecimentos de recreação infantil.\n\n"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_lei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:\n\nArt. 1º Os estabelecimentos de ensino de educação básica da rede pública, por meio dos respectivos sistemas de ensino, e os estabelecimentos de ensino de educação básica e de recreação infantil da rede privada deverão capacitar professores e funcionários em noções de primeiros socorros.\n\n§ 1º O curso deverá ser ofertado anualmente e destinar-se-á à capacitação e/ou à reciclagem de parte dos professores e funcionários dos estabelecimentos de ensino e recreação a que se refere o caput deste artigo, sem prejuízo de suas atividades ordinárias.\n\n§ 2º A quantidade de profissionais capacitados em cada estabelecimento de ensino ou de recreação será definida em regulamento, guardada a proporção com o tamanho do corpo de professores e funcionários ou com o fluxo de atendimento de crianças e adolescentes no estabelecimento.\n\n§ 3º A responsabilidade pela capacitação dos professores e funcionários dos estabelecimentos públicos caberá aos respectivos sistemas ou redes de ensino.\n\nArt. 2º Os cursos de primeiros socorros serão ministrados por entidades municipais ou estaduais especializadas em práticas de auxílio imediato e emergencial à população, no caso dos estabelecimentos públicos, e por profissionais habilitados, no caso dos estabelecimentos privados, e têm por objetivo capacitar os professores e funcionários para identificar e agir preventivamente em situações de emergência e urgência médicas, até que o suporte médico especializado, local ou remoto, se torne possível.\n\n§ 1º O conteúdo dos cursos de primeiros socorros básicos ministrados deverá ser condizente com a natureza e a faixa etária do público atendido nos estabelecimentos de ensino ou de recreação.\n\n§ 2º Os estabelecimentos de ensino ou de recreação das redes pública e particular deverão dispor de kits de primeiros socorros, conforme orientação das entidades especializadas em atendimento emergencial à população.\n\nArt. 3º São os estabelecimentos de ensino obrigados a afixar em local visível a certificação que comprove a realização da capacitação de que trata esta Lei e o nome dos profissionais capacitados.\n\nArt. 4º O não cumprimento das disposições desta Lei implicará a imposição das seguintes penalidades pela autoridade administrativa, no âmbito de sua competência:  I - notificação de descumprimento da Lei;  II - multa, aplicada em dobro em caso de reincidência; ou  III - em caso de nova reincidência, a cassação do alvará de funcionamento ou da autorização concedida pelo órgão de educação, quando se tratar de creche ou estabelecimento particular de ensino ou de recreação, ou a responsabilização patrimonial do agente público, quando se tratar de creche ou estabelecimento público.\n\nArt. 5º Os estabelecimentos de ensino de que trata esta Lei deverão estar integrados à rede de atenção de urgência e emergência de sua região e estabelecer fluxo de encaminhamento para uma unidade de saúde de referência.\n\nArt. 6º O Poder Executivo definirá em regulamento os critérios para a implementação dos cursos de primeiros socorros previstos nesta Lei.\n\nArt. 7º As despesas para a execução desta Lei correrão por conta de dotações orçamentárias próprias, incluídas pelo Poder Executivo nas propostas orçamentárias anuais e em seu plano plurianual.\n\nArt. 8º Esta Lei entra em vigor após decorridos 180 (cento e oitenta) dias de sua publicação oficial.  Brasília, 4 de outubro de 2018; 197º da Independência e 130º da República.\n\nBrasília, 4 de outubro de 2018; 197º da Independência e 130º da República.\n\nMICHEL TEMER\n\nGustavo do Vale Rocha\n\nEste texto não substitui o publicado no DOU de 05/10/2018.\n\n"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/barra_topo_lei"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageButton
+        android:id="@+id/botao_lei_lei"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botao_lei" />
+
+    <ImageButton
+        android:id="@+id/botao_sobre_lei"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_sobre"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_sobre_fora" />
+
+    <ImageButton
+        android:id="@+id/botao_creditos_lei"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_creditos"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/botao_creditos_fora" />
+
+    <ImageButton
+        android:id="@+id/botao_primeiros_socorros_lei"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_ps"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_primeiros_socorros" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

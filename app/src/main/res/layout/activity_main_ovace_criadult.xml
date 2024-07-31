@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_ovace_criadult">
+
+    <ImageView
+        android:id="@+id/barra_topo_lei"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageView
+        android:id="@+id/titulo_procedimento_pcr"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginTop="-4dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_lei"
+        app:srcCompat="@drawable/titulo_ovace_criadult" />
+
+    <ScrollView
+        android:id="@+id/pcr_bebe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_procedimento_pcr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/oqueeavulsao_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MANOBRA DE HEIMILICH: Técnica que utilizam-se as mãos para fazer pressão sobre o diafragma da pessoa engasgada, o que provoca uma tosse forçada e que faz com que o objeto seja expulso dos pulmões."
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:id="@+id/passo1_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/passo1" />
+
+            <TextView
+                android:id="@+id/passo1_pcr_adultol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Se posicione atrás da vítima, envolvendo-a com os braços.\n\nCaso seja uma criança, ajoelhe-se para ficar na mesma altura que ela.\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/passo1_pcr_adultof"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/img5_ovace" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo2_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/passo2" />
+
+            <TextView
+                android:id="@+id/passo2_pcr_adultol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fechar bem uma das mãos, com o polegar por cima, e posicioná-la na região superior do abdômen, entre o umbigo e o a caixa torácica.\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/passo2_pcr_adultof"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/img6_ovace" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo3_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/passo3" />
+
+            <TextView
+                android:id="@+id/passo3_pcr_adultol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colocar a outra mão sobre o punho fechado, agarrando-o firmemente.\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/passo3_pcr_adultof"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/img7_ovace" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo4_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/passo4" />
+
+            <TextView
+                android:id="@+id/passo4_pcr_adultol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Puxar com força ambas as mãos para dentro e para cima.\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/passo4_pcr_adultof"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/img8_ovace" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo5_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/passo5" />
+
+            <TextView
+                android:id="@+id/passo5_pcr_adultol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Repetir a manobra até o objeto ser expelido e a vítima volta a respirar.\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/passo5_pcr_adultof"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/img9_ovace" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo6_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/passo6" />
+
+            <TextView
+                android:id="@+id/passo6_pcr_adultol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caso não tenha sucesso na Manobra de Heimlich, inicie a RCP (Ressuscitação Cardio Respiratória) para manter o sangue circulando pelo corpo, aumentando as chances de sobrevivência.\n"
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/botao_rcp"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:background="@android:color/transparent"
+                android:onClick="tela_pcr"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/botao_rcp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/botao_voltar_avaliacaoinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_ps"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

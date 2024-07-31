@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icone"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SOSProtetor"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity_ovace_criadult"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_ovace_bebe"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_pcr_adulto"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_pcr_crianca"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_pcr_bebe"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_avulsaodentaria"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_ovace"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_convulsao"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_desmaio"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_fratura"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_ferimentos"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_pcr"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity_lei"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".MainActivity_creditos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".MainActivity_avaliacaoinicial"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity_primeiros_socorros"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

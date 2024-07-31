@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_creditos">
+
+    <ScrollView
+        android:id="@+id/scrollview_creditos"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="60dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/botao_ps_creditos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_creditos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/txt_disciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Disciplina"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_desenvolvimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desenvolvimento de Software"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#5A5A5A"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_professor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Professor"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_elvio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prof. Dr. Elvio Gilberto da Silva"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#5A5A5A"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_professora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Professora Colaboradora"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_marcia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profª Dra. Marcia Aparecida Nuevo Gatti"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#5A5A5A"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_autor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Autor Desenvolvedor"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_guilherme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luiz Guilherme Del Rio Daniel"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#5A5A5A"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_alunoscolab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Colaboradores/Conteudistas"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_lista_alunos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amanda Cristina Faciolo Fernandes\nAndressa Cristina Fernandes\nBruna Pessutto Cruzera\nCamille Rocha Lima Sevalho\nFernanda vitória Jacob Dalla Bernardina\nGabriely Vitória Peixoto\nKaren Guimarães dos Santos\nLaura Rodrigues dos Santos\nLucas Martins Stigliano\nLucidalva Pereira dos Santos\nMarcela Calarga Rodrigues Batista\nMarieli de Souza\nRafaella Flores\nSimone de Oliveira Flores\nYasmin Camargo Rampazo"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#5A5A5A"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@id/txt_desenvolvimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Iniciativa"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_curso"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/unisagrado_curso" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/txt_alunos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Apoio"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#B71C1C"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_reitoria"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/unisagrado_reitoria" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/barra_topo_creditos"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageButton
+        android:id="@+id/botao_lei_creditos"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_lei"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botao_lei" />
+
+    <ImageButton
+        android:id="@+id/botao_sobre_creditos"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_sobre"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_sobre_fora" />
+
+    <ImageButton
+        android:id="@+id/botao_creditos_creditos"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/botao_creditos_dentro" />
+
+    <ImageButton
+        android:id="@+id/botao_ps_creditos"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_ps"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_primeiros_socorros" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

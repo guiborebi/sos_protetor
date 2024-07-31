@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_desmaio">
+
+    <ImageView
+        android:id="@+id/barra_topo_lei"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageView
+        android:id="@+id/titulo_desmaio"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="-4dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_lei"
+        app:srcCompat="@drawable/titulo_desmaio" />
+
+    <ScrollView
+        android:id="@+id/scrollview_desmaio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_desmaio">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <ImageView
+                android:id="@+id/oqueepcr_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/oquee" />
+
+            <TextView
+                android:id="@+id/oqueeavulsao_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O desmaio pode ser definido como é um mal estar leve e passageiro com perda da consciência, podendo ser causado por dor, medo, perturbação emocional, excesso de sol, ambientes fechados, exaustão ou falta de alimentação. O restabelecimento da vítma é normalmente rápido e completo."
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo1_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/esq_1sinaisesintomas" />
+
+            <ImageView
+                android:id="@+id/horadeouro_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/sinais_sintomas" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo2_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/dir_2o_que_fazer" />
+
+            <ImageView
+                android:id="@+id/comoidentificar_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/oqfazer_desmaio" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/botao_voltar_avaliacaoinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_ps"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

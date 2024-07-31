@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity_fratura">
+
+    <ImageView
+        android:id="@+id/barra_topo_lei"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barra_topo" />
+
+    <ImageView
+        android:id="@+id/titulo_fraturas"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="-4dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_lei"
+        app:srcCompat="@drawable/titulo_fraturas" />
+
+    <ScrollView
+        android:id="@+id/scrollview_fratura"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_fraturas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <ImageView
+                android:id="@+id/oqueepcr_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/oquee" />
+
+            <TextView
+                android:id="@+id/oqueeavulsao_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fratura é uma lesão óssea que ocorre quando há uma quebra na continuidade do osso. As fraturas podem ser classificadas como expostas ou fechadas, dependendo se o osso quebrado é projetado através da pele ou não."
+                android:textAlignment="center"
+                android:textColor="#5A5A5A"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo1_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/comoidentificar" />
+
+            <ImageView
+                android:id="@+id/horadeouro_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="340dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fratura_comoidentificar" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/passo2_pcr_adulto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/esq_1cuidados_iniciais" />
+
+            <ImageView
+                android:id="@+id/comoidentificar_conteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/cuidados_iniciaisfratura" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/comoagir_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/dir_2atencao" />
+
+            <ImageView
+                android:id="@+id/comoagir_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/atencao_fratexp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/esq_3oquefazer" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/fratura_oqfazer" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/botao_voltar_avaliacaoinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@android:color/transparent"
+        android:onClick="tela_ps"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botao_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
